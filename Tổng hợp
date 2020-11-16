@@ -1,0 +1,28 @@
+git add .
+git commit -m "messeage"
+git push origin <branch>
+-------tao branch
+git branch <branchname> 
+-------chuyen branch
+git checkout <branch> 
+-------xoa branch
+git branch -d <branchname> 
+-------xoá folder git ở repo
+git rm -r one-of-the-directories
+git commit -m "Remove duplicated directory"
+git push origin <your-git-branch> (typically 'master', but not always)
+------xoá ko xoá folder ở local
+git rm -r --cached myFolder
+git commit -m "Removed folder from repository"
+git push origin master
+------merge
+git checkout test //chuyen branch
+git pull origin master //pull từ master
+git push origin test
+git checkout master
+git pull origin test 
+OR
+git checkout test
+git pull origin master
+git checkout master
+git merge test

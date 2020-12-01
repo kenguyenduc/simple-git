@@ -26,3 +26,14 @@ git checkout test
 git pull origin master
 git checkout master
 git merge test
+-------------------
+Tạo Branch mới từ 1 Branch khác trong Git
+---Chuyển tới branch mà bạn đang cần tạo mới từ nó :
+git checkout develop
+---Tạo branch mới :
+git checkout -b develop_1 develop
+---Push dữ liệu tới branch mới :
+git push origin develop_1
+
+Kiểm tra lại danh sách branch đang sử dụng:
+git branch -a
